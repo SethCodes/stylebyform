@@ -1,0 +1,148 @@
+.container-fluid{
+    padding: 0px;
+}
+
+.hero{
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center end;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: fill;
+}
+
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.hero h1, h2{
+    color: white;
+    font-size: 4.5rem;
+    width: 80%;
+    line-height: 5rem;
+}
+
+.reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 15%;
+    background-color: darkblue;
+    color: white;
+    line-height: 5rem;
+    position: relative;
+}
+.reservation h3{
+    line-height: 3rem;
+}
+.reservation button{
+    padding: 20px 50px;
+}
+.infoSec{
+    padding: 50px 0px;
+    
+
+}
+.infoText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.infoImgDiv{
+    display: flex;
+    justify-content: center;
+}
+.infoImg{
+    background-color: blue;
+    max-width: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.infoCopy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infoH{
+    width: 85%;
+    color: black;
+    line-height: 2rem;
+    letter-spacing: 1px;
+
+}
+.infoP{
+    width: 90%;
+    padding-top: 20px;
+}
+
+/* image parallax */
+.imgSec{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  object-position: center;
+}
+
+#subscription{
+    position: relative;
+    height: 600px;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center ;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: fill;
+    text-align: center;
+}
+
+.subscription{
+   
+    
+    padding: 10% 15%;
+    color: white;
+    line-height: 5rem;
+}
+
+.subscription h2{
+justify-items: center;}
+.subBorder{
+    border: 1px solid red;
+    padding: 50px;
+
+}
+
+/* medium screen size */
+@media only screen and (max-width: 991px) {
+    .hero {
+      background-position: center top;
+    }
+  }
+
+
+/* small screen size */
+@media only screen and (max-width: 767px) {
+    .topPad{
+        padding-top: 20px;
+    }
+    .bottomPad{
+        padding-bottom: 20px;
+    }
+  }
