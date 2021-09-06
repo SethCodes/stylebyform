@@ -102,14 +102,13 @@
 #subscription{
     position: relative;
     height: 600px;
-    background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center ;
+    
+  
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  object-fit: fill;
+  object-fit: cover;
     text-align: center;
 }
 
