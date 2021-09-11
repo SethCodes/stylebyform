@@ -19,7 +19,7 @@ mongoose
   .then(() => console.log("MongoDB has been connected"))
   .catch((err) => console.log(err));
 
-  // Accessing the path module
+// Accessing the path module
 const path = require("path");
 
 // Step 1:
