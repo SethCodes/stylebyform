@@ -10,7 +10,7 @@ app.use(express.json());
 
 const blogRoutes = require("./routes/blogs");
 app.use("/blogs", blogRoutes);
-
+//comment
 mongoose
   .connect(process.env.ATLAS_URI, {
     useNewUrlParser: true,
