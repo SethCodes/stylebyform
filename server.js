@@ -15,6 +15,7 @@ app.use("/blogs", blogRoutes);
 
 const uri = "mongodb+srv://KableAcademy:Kable@cluster4.9l4dq.mongodb.net/cinci-attractions?retryWrites=true&w=majority";
 const MONGO_DB = process.env.ATLAS_URI;
+console.log(MONGO_DB);
 
 
 mongoose
@@ -30,6 +31,7 @@ mongoose
     .then((blog) => {
       const response = res.json(blog);
       console.log(response);
+      
 
     })
     .catch(err => console.log(err));
