@@ -26,18 +26,18 @@ mongoose
   .then(() => console.log("MongoDB has been connected"))
   .catch((err) => console.log(err));
 
-  app.get('/', (req, res) => {
-    Blog.find()
-    .then((blog) => {
-      const response = res.json(blog);
-      console.log(response);
+  // app.get('/', (req, res) => {
+  //   Blog.find()
+  //   .then((blog) => {
+  //     const response = res.json(blog);
+  //     console.log(response);
       
 
-    })
-    .catch(err => console.log(err));
+  //   })
+  //   .catch(err => console.log(err));
 
 
-  })
+  // })
 
 // // Accessing the path module
 // const path = require("path");
