@@ -5,32 +5,35 @@ import BACKEND_URL from "./config";
 
 function App() {
 
-  const [item, setItem] = useState("");
+  const [items, setItems] = useState([]);
 
 
   useEffect(() => {
     const getData = async () => {
-      const res = await axios.get(BACKEND_URL + "/blogs/" );
-      setItem(res.data);
+      const res = await axios.get(BACKEND_URL + "/blogs" );
+      setItems(res.data);
+
 
     };
     getData();
+
 
   }, []);
 
   return (
     <div className="App">
-     {!item ? "loading..." : (
-       item.localeCompare((item)=> {
-         return(
-           <div className="">
-             <ul>
-               <li>{item.title}</li>
-             </ul>
-           </div>
-         )
-       })
-     )}
+    <h1>hello</h1>
+    {
+      items.map((item) => {
+        return(
+          <div className="">
+            <ul>
+              <li>{item.title}</li>
+            </ul>
+          </div>
+        )
+      })
+    }
     </div>
   );
 }
