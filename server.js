@@ -14,9 +14,11 @@ const blogRoutes = require("./routes/Blogs");
 app.use("/blogs", blogRoutes);
 
 const uri = "mongodb+srv://KableAcademy:Kable@cluster4.9l4dq.mongodb.net/cinci-attractions?retryWrites=true&w=majority";
+const MONGO_DB = process.env.ATLAS_URI;
+
 
 mongoose
-  .connect(uri, {
+  .connect(MONGO_DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
