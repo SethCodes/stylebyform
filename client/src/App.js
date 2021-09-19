@@ -7,17 +7,12 @@ function App() {
 
   const [items, setItems] = useState([]);
 
-
   useEffect(() => {
     const getData = async () => {
       const res = await axios.get(BACKEND_URL + "/blogs" );
       setItems(res.data);
-
-
     };
     getData();
-//comment
-
   }, []);
 
   return (
