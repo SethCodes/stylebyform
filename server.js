@@ -9,14 +9,14 @@ require("dotenv").config();
 const MONGO_DB = process.env.ATLAS_URI;
 
 //routes
-const blogRoutes = require("./routes/Blogs");
+// const blogRoutes = require("./routes/Blogs");
 const userRoutes = require("./routes/Users");
 
 
 //middleware
 app.use(cors());
 app.use(express.json());
-app.use("/blogs", blogRoutes);
+// app.use("/blogs", blogRoutes);
 app.use("/users", userRoutes)
 
 // static files for heroku
