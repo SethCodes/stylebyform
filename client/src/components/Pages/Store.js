@@ -49,6 +49,8 @@ useEffect(() => {
             </header>
             <div id="products" className="">
             <div className="product-div">
+
+            {/* list of all products */}
                 {items.map((item) => {
                     return (
                         <div className="product" key={item.id}>
