@@ -1,0 +1,16 @@
+#products{
+    margin: 0;
+    padding: 1rem;
+}
+.product{
+    width: 200px;
+}
+
+.productDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.productImage{
+    width: 200px;
+}

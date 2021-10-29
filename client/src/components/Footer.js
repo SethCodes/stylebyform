@@ -6,7 +6,7 @@ import Logo from '../images/logo.png';
 
 const Footer = () => {
     return (
-        <div id="footer" className="footer">
+        <div id="footer" className="footer sticky-bottom">
             <div className="row">
                 <div className="col-md-3 col-sm-12">
                     <img src={Logo} alt="logo"/>

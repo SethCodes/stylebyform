@@ -28,6 +28,9 @@ const Navbar = () => {
           <Link className="nav-link" to="/reservation">Make A Reservation</Link>
         </li>
         <li className="nav-item">
+          <Link className="nav-link" to="/store">Shop</Link>
+        </li>
+        <li className="nav-item">
           <Link className="nav-link" to={{pathname: "https://www.facebook.com/stylebyform"}} target="_blank"><i className="fab fa-facebook-f"></i></Link>
         </li>
         <li className="nav-item">
